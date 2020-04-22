@@ -12,5 +12,5 @@ months_1 = {
           november: 30,
           december: 31
 }
-months_2 = months_1.select {|m1, d1| d1 = 30 }
+months_2 = months_1.select {|m1, d1| d1 == 30 }
 months_2.each {|m2, d2| puts "#{m2} - #{d2}"}
